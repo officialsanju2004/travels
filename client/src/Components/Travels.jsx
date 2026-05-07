@@ -230,10 +230,16 @@ const Home = () => {
     "OUR FLEETS": {
       type: "dropdown",
       items: {
-        "SEDAN": { items: ["Toyota Etios", "Honda Amaze", "Honda WRV"] },
-        "REGULAR SUV": { items: ["Ford Endeavour", "Toyota Innova Hycross", "Toyota Innova Crysta", "Toyota Innova"] },
-        "COACHES": { items: ["Toyota Hiace", "SML 12STD", "Tempo Traveller 12STD", "Tempo Traveller 16STD", "SML 20STD", "Coach 40STD"] },
-        "LUXURY CARS": { items: ["Mercedes Benz E Class", "Mercedes Benz S Class"] }
+      "SEDAN": {
+  items: [
+    { name: "Toyota Etios", link: "/car/toyota-etios" },
+    { name: "Honda Amaze", link: "/fleet/honda-amaze" },
+    { name: "Honda WRV", link: "/fleet/honda-wrv" }
+  ]
+},
+        "REGULAR SUV": { items: [ {"name": "Ford Endeavour", "link": "/car/ford-endeavour"}, {"name": "Toyota Innova Hycross", "link": "/fleet/toyota-innova-hycross"}, {"name": "Toyota Innova Crysta", "link": "/fleet/toyota-innova-crysta"}, {"name": "Toyota Innova", "link": "/fleet/toyota-innova"} ] },
+        "COACHES": { items: [ {"name": "Toyota Hiace", "link": "/car/toyota-hiace"}, {"name": "SML 12STD", "link": "/fleet/sml-12std"}, {"name": "Tempo Traveller 12STD", "link": "/fleet/tempo-traveller-12std"}, {"name": "Tempo Traveller 16STD", "link": "/fleet/tempo-traveller-16std"}, {"name": "SML 20STD", "link": "/fleet/sml-20std"}, {"name": "Coach 40STD", "link": "/fleet/coach-40std"} ] },
+        "LUXURY CARS": { items: [ {"name": "Mercedes Benz E Class", "link": "/car/mercedes-e-class"}, {"name": "Mercedes Benz S Class", "link": "/fleet/mercedes-benz-s-class"} ] }
       }
     },
     "CONTACT": {
@@ -346,7 +352,8 @@ const Home = () => {
                             </div>
                             <div className="py-1">
                               {categoryData.items.length > 0 ? categoryData.items.map((item, itemIdx) => (
-                                <a key={itemIdx} href="#" className="block px-5 py-2 text-sm transition-all duration-200 hover:bg-orange-50 hover:text-orange-500" style={{ color: '#1e2a3e' }}>{item}</a>
+                                <a  key={itemIdx}
+    href={item.link} className="block px-5 py-2 text-sm transition-all duration-200 hover:bg-orange-50 hover:text-orange-500" style={{ color: '#1e2a3e' }}>{item.name}</a>
                               )) : (
                                 <a href={`/${category.toLowerCase().replace(/ /g, '')}`} className="block px-5 py-2 text-sm transition-all duration-200 hover:bg-orange-50 hover:text-orange-500" style={{ color: '#1e2a3e' }}>{category}</a>
                               )}
@@ -394,7 +401,8 @@ const Home = () => {
                             <div key={catIdx} className="space-y-1">
                               <div className="px-3 py-1.5"><span className="text-xs font-bold uppercase tracking-wider" style={{ color: '#e67e22' }}>{category}</span></div>
                               {categoryData.items.length > 0 ? categoryData.items.map((item, itemIdx) => (
-                                <a key={itemIdx} href="#" className="block py-2 px-4 text-sm rounded-lg transition-all duration-200 hover:bg-orange-50 hover:text-orange-500" style={{ color: '#1e2a3e' }}>{item}</a>
+                                <a  key={itemIdx}
+    href={item.link} className="block py-2 px-4 text-sm rounded-lg transition-all duration-200 hover:bg-orange-50 hover:text-orange-500" style={{ color: '#1e2a3e' }}>{item.name}</a>
                               )) : (
                                 <a href={`/${category.toLowerCase().replace(/ /g, '')}`} className="block py-2 px-4 text-sm rounded-lg transition-all duration-200 hover:bg-orange-50 hover:text-orange-500" style={{ color: '#1e2a3e' }}>{category}</a>
                               )}

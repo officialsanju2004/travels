@@ -34,10 +34,16 @@ const ContactPage = () => {
     "OUR FLEETS": {
       type: "dropdown",
       items: {
-        "SEDAN": { items: ["Toyota Etios", "Honda Amaze", "Honda WRV"] },
-        "REGULAR SUV": { items: ["Ford Endeavour", "Toyota Innova Hycross", "Toyota Innova Crysta", "Toyota Innova"] },
-        "COACHES": { items: ["Toyota Hiace", "SML 12STD", "Tempo Traveller 12STD", "Tempo Traveller 16STD", "SML 20STD", "Coach 40STD"] },
-        "LUXURY CARS": { items: ["Mercedes Benz E Class", "Mercedes Benz S Class"] }
+      "SEDAN": {
+  items: [
+    { name: "Toyota Etios", link: "/car/toyota-etios" },
+    { name: "Honda Amaze", link: "/fleet/honda-amaze" },
+    { name: "Honda WRV", link: "/fleet/honda-wrv" }
+  ]
+},
+        "REGULAR SUV": { items: [ {"name": "Ford Endeavour", "link": "/car/ford-endeavour"}, {"name": "Toyota Innova Hycross", "link": "/fleet/toyota-innova-hycross"}, {"name": "Toyota Innova Crysta", "link": "/fleet/toyota-innova-crysta"}, {"name": "Toyota Innova", "link": "/fleet/toyota-innova"} ] },
+        "COACHES": { items: [ {"name": "Toyota Hiace", "link": "/car/toyota-hiace"}, {"name": "SML 12STD", "link": "/fleet/sml-12std"}, {"name": "Tempo Traveller 12STD", "link": "/fleet/tempo-traveller-12std"}, {"name": "Tempo Traveller 16STD", "link": "/fleet/tempo-traveller-16std"}, {"name": "SML 20STD", "link": "/fleet/sml-20std"}, {"name": "Coach 40STD", "link": "/fleet/coach-40std"} ] },
+        "LUXURY CARS": { items: [ {"name": "Mercedes Benz E Class", "link": "/car/mercedes-e-class"}, {"name": "Mercedes Benz S Class", "link": "/fleet/mercedes-benz-s-class"} ] }
       }
     },
     "CONTACT": {
@@ -48,7 +54,6 @@ const ContactPage = () => {
       }
     }
   };
-
   const toggleMobileMenu = (menuKey) => {
     setMobileOpenMenus(prev => ({
       ...prev,
@@ -97,145 +102,147 @@ const ContactPage = () => {
 
   return (
     <>
-    {/* Top Bar */}
-          <div className="hidden md:block py-2.5 px-6" style={{ backgroundColor: '#1e2a3e' }}>
-            <div className="max-w-7xl mx-auto flex justify-between items-center">
-              <div className="flex items-center gap-6">
-                <a href="tel:+919888767474" className="text-gray-300 hover:text-orange-400 text-sm transition flex items-center gap-2">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#e67e22' }}>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                  +91 98887 67474
-                </a>
-                <a href="mailto:info@ranveertravels.com" className="text-gray-300 hover:text-orange-400 text-sm transition flex items-center gap-2">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#e67e22' }}>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                  info@ranveertravels.com
-                </a>
-              </div>
-              <div className="flex items-center gap-4">
-                <span className="text-xs text-gray-400">Follow us:</span>
-                <a href="#" className="text-gray-300 hover:text-orange-400 transition"><FaInstagram className="w-5 h-5" /></a>
-                <a href="#" className="text-gray-300 hover:text-orange-400 transition"><FaFacebookF className="w-5 h-5" /></a>
-                <a href="#" className="text-gray-300 hover:text-orange-400 transition"><FaWhatsapp className="w-5 h-5" /></a>
-              </div>
-            </div>
-          </div>
-    
-          {/* Main Navbar */}
-          <nav className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled ? 'shadow-md py-2 bg-white/95 backdrop-blur-sm' : 'py-4 bg-white'}`} style={{ borderBottom: '1px solid #f0e6dc' }}>
-            <div className="max-w-7xl mx-auto px-4 md:px-6">
-              <div className="flex justify-between items-center">
-                <a href="/" className="flex items-center group">
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:shadow-lg" style={{ backgroundColor: '#e67e22' }}>
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                    </svg>
-                  </div>
-                  <div className="ml-3">
-                    <span className="font-bold text-xl tracking-tight" style={{ color: '#1e2a3e' }}>RANVEER</span>
-                    <span className="block text-xs -mt-0.5 font-medium" style={{ color: '#e67e22' }}>Tour & Travels</span>
-                  </div>
-                </a>
-    
-                {/* Desktop Navigation */}
-                <div className="hidden lg:flex items-center space-x-1">
-                  {Object.entries(navStructure).map(([label, config], idx) => (
-                    <div key={idx} className="relative group" onMouseEnter={() => config.type !== "link" && setActiveDropdown(label)} onMouseLeave={() => config.type !== "link" && setActiveDropdown(null)}>
-                      {config.type === "link" ? (
-                        <a href={config.href} className="px-4 py-2.5 rounded-lg font-semibold text-sm transition-all duration-200 hover:bg-orange-50 hover:text-orange-500 block" style={{ color: '#1e2a3e' }}>{label}</a>
-                      ) : (
-                        <>
-                          <button className={`px-4 py-2.5 rounded-lg font-semibold text-sm transition-all duration-200 flex items-center gap-1.5 ${activeDropdown === label ? 'bg-orange-50 text-orange-500' : 'hover:bg-orange-50 hover:text-orange-500'}`} style={{ color: '#1e2a3e' }}>
-                            {label}
-                            <svg className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === label ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                            </svg>
-                          </button>
-                          <div className={`absolute left-0 mt-1 w-64 rounded-xl shadow-xl overflow-hidden transition-all duration-200 origin-top ${activeDropdown === label ? 'opacity-100 scale-100 visible' : 'opacity-0 scale-95 invisible'}`} style={{ backgroundColor: '#ffffff', border: '1px solid #f0e6dc' }}>
-                            {Object.entries(config.items).map(([category, categoryData], catIdx) => (
-                              <div key={catIdx}>
-                                <div className="px-5 py-2.5 bg-orange-50">
-                                  <span className="text-xs font-bold uppercase tracking-wider" style={{ color: '#e67e22' }}>{category}</span>
-                                </div>
-                                <div className="py-1">
-                                  {categoryData.items.length > 0 ? categoryData.items.map((item, itemIdx) => (
-                                    <a key={itemIdx} href="#" className="block px-5 py-2 text-sm transition-all duration-200 hover:bg-orange-50 hover:text-orange-500" style={{ color: '#1e2a3e' }}>{item}</a>
-                                  )) : (
-                                    <a href={`/${category.toLowerCase().replace(/ /g, '')}`} className="block px-5 py-2 text-sm transition-all duration-200 hover:bg-orange-50 hover:text-orange-500" style={{ color: '#1e2a3e' }}>{category}</a>
-                                  )}
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </>
-                      )}
-                    </div>
-                  ))}
-                </div>
-    
-                <div className="hidden lg:block">
-                  <a href="/contact" className="px-6 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 flex items-center gap-2" style={{ backgroundColor: '#e67e22', color: '#ffffff' }}>
-                    <span>🚕</span> Book Now
-                  </a>
-                </div>
-    
-                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="lg:hidden p-2 rounded-xl transition-all duration-200 hover:bg-orange-50" style={{ color: '#1e2a3e' }}>
-                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    {isMenuOpen ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /> : <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />}
-                  </svg>
-                </button>
-              </div>
-    
-              {/* Mobile Menu */}
-              <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-[70vh] opacity-100 mt-5 overflow-y-auto' : 'max-h-0 opacity-0'}`}>
-                <div className="py-3 space-y-1 border-t" style={{ borderColor: '#f0e6dc' }}>
-                  {Object.entries(navStructure).map(([label, config], idx) => (
-                    <div key={idx}>
-                      {config.type === "link" ? (
-                        <a href={config.href} className="block py-3 px-3 rounded-xl font-medium transition-all duration-200 hover:bg-orange-50 hover:text-orange-500" style={{ color: '#1e2a3e' }} onClick={() => setIsMenuOpen(false)}>{label}</a>
-                      ) : (
-                        <>
-                          <button onClick={() => toggleMobileMenu(label)} className="w-full flex justify-between items-center py-3 px-3 rounded-xl font-medium transition-all duration-200 hover:bg-orange-50" style={{ color: '#1e2a3e' }}>
-                            <span>{label}</span>
-                            <svg className={`w-5 h-5 transition-transform duration-200 ${mobileOpenMenus[label] ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                            </svg>
-                          </button>
-                          {mobileOpenMenus[label] && (
-                            <div className="ml-5 mt-1 space-y-3 border-l-2 pl-3" style={{ borderColor: '#e67e22' }}>
-                              {Object.entries(config.items).map(([category, categoryData], catIdx) => (
-                                <div key={catIdx} className="space-y-1">
-                                  <div className="px-3 py-1.5"><span className="text-xs font-bold uppercase tracking-wider" style={{ color: '#e67e22' }}>{category}</span></div>
-                                  {categoryData.items.length > 0 ? categoryData.items.map((item, itemIdx) => (
-                                    <a key={itemIdx} href="#" className="block py-2 px-4 text-sm rounded-lg transition-all duration-200 hover:bg-orange-50 hover:text-orange-500" style={{ color: '#1e2a3e' }}>{item}</a>
-                                  )) : (
-                                    <a href={`/${category.toLowerCase().replace(/ /g, '')}`} className="block py-2 px-4 text-sm rounded-lg transition-all duration-200 hover:bg-orange-50 hover:text-orange-500" style={{ color: '#1e2a3e' }}>{category}</a>
-                                  )}
-                                </div>
-                              ))}
-                            </div>
-                          )}
-                        </>
-                      )}
-                    </div>
-                  ))}
-                  
-                  <div className="pt-4 mt-4 border-t" style={{ borderColor: '#f0e6dc' }}>
-                    <a href="/contact" className="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl font-semibold transition-all duration-300" style={{ backgroundColor: '#e67e22', color: '#ffffff' }} onClick={() => setIsMenuOpen(false)}>
-                      <span>🚕</span> Book Now
-                    </a>
-                  </div>
-    
-                  <div className="pt-4 space-y-2 text-sm text-gray-500 px-2">
-                    <a href="tel:+919888767474" className="flex items-center gap-2 py-1 text-gray-600"><span>📞</span> +91 98887 67474</a>
-                    <a href="mailto:info@ranveertravels.com" className="flex items-center gap-2 py-1 text-gray-600"><span>✉️</span> info@ranveertravels.com</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
+   {/* Top Bar */}
+         <div className="hidden md:block py-2.5 px-6" style={{ backgroundColor: '#1e2a3e' }}>
+           <div className="max-w-7xl mx-auto flex justify-between items-center">
+             <div className="flex items-center gap-6">
+               <a href="tel:+919888767474" className="text-gray-300 hover:text-orange-400 text-sm transition flex items-center gap-2">
+                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#e67e22' }}>
+                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                 </svg>
+                 +91 98887 67474
+               </a>
+               <a href="mailto:info@ranveertravels.com" className="text-gray-300 hover:text-orange-400 text-sm transition flex items-center gap-2">
+                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#e67e22' }}>
+                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                 </svg>
+                 info@ranveertravels.com
+               </a>
+             </div>
+             <div className="flex items-center gap-4">
+               <span className="text-xs text-gray-400">Follow us:</span>
+               <a href="#" className="text-gray-300 hover:text-orange-400 transition"><FaInstagram className="w-5 h-5" /></a>
+               <a href="#" className="text-gray-300 hover:text-orange-400 transition"><FaFacebookF className="w-5 h-5" /></a>
+               <a href="#" className="text-gray-300 hover:text-orange-400 transition"><FaWhatsapp className="w-5 h-5" /></a>
+             </div>
+           </div>
+         </div>
+   
+         {/* Main Navbar */}
+         <nav className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled ? 'shadow-md py-2 bg-white/95 backdrop-blur-sm' : 'py-4 bg-white'}`} style={{ borderBottom: '1px solid #f0e6dc' }}>
+           <div className="max-w-7xl mx-auto px-4 md:px-6">
+             <div className="flex justify-between items-center">
+               <a href="/" className="flex items-center group">
+                 <div className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:shadow-lg" style={{ backgroundColor: '#e67e22' }}>
+                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                   </svg>
+                 </div>
+                 <div className="ml-3">
+                   <span className="font-bold text-xl tracking-tight" style={{ color: '#1e2a3e' }}>RANVEER</span>
+                   <span className="block text-xs -mt-0.5 font-medium" style={{ color: '#e67e22' }}>Tour & Travels</span>
+                 </div>
+               </a>
+   
+               {/* Desktop Navigation */}
+               <div className="hidden lg:flex items-center space-x-1">
+                 {Object.entries(navStructure).map(([label, config], idx) => (
+                   <div key={idx} className="relative group" onMouseEnter={() => config.type !== "link" && setActiveDropdown(label)} onMouseLeave={() => config.type !== "link" && setActiveDropdown(null)}>
+                     {config.type === "link" ? (
+                       <a href={config.href} className="px-4 py-2.5 rounded-lg font-semibold text-sm transition-all duration-200 hover:bg-orange-50 hover:text-orange-500 block" style={{ color: '#1e2a3e' }}>{label}</a>
+                     ) : (
+                       <>
+                         <button className={`px-4 py-2.5 rounded-lg font-semibold text-sm transition-all duration-200 flex items-center gap-1.5 ${activeDropdown === label ? 'bg-orange-50 text-orange-500' : 'hover:bg-orange-50 hover:text-orange-500'}`} style={{ color: '#1e2a3e' }}>
+                           {label}
+                           <svg className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === label ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                           </svg>
+                         </button>
+                         <div className={`absolute left-0 mt-1 w-64 rounded-xl shadow-xl overflow-hidden transition-all duration-200 origin-top ${activeDropdown === label ? 'opacity-100 scale-100 visible' : 'opacity-0 scale-95 invisible'}`} style={{ backgroundColor: '#ffffff', border: '1px solid #f0e6dc' }}>
+                           {Object.entries(config.items).map(([category, categoryData], catIdx) => (
+                             <div key={catIdx}>
+                               <div className="px-5 py-2.5 bg-orange-50">
+                                 <span className="text-xs font-bold uppercase tracking-wider" style={{ color: '#e67e22' }}>{category}</span>
+                               </div>
+                               <div className="py-1">
+                                 {categoryData.items.length > 0 ? categoryData.items.map((item, itemIdx) => (
+                                   <a  key={itemIdx}
+       href={item.link} className="block px-5 py-2 text-sm transition-all duration-200 hover:bg-orange-50 hover:text-orange-500" style={{ color: '#1e2a3e' }}>{item.name}</a>
+                                 )) : (
+                                   <a href={`/${category.toLowerCase().replace(/ /g, '')}`} className="block px-5 py-2 text-sm transition-all duration-200 hover:bg-orange-50 hover:text-orange-500" style={{ color: '#1e2a3e' }}>{category}</a>
+                                 )}
+                               </div>
+                             </div>
+                           ))}
+                         </div>
+                       </>
+                     )}
+                   </div>
+                 ))}
+               </div>
+   
+               <div className="hidden lg:block">
+                 <a href="/contact" className="px-6 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 flex items-center gap-2" style={{ backgroundColor: '#e67e22', color: '#ffffff' }}>
+                   <span>🚕</span> Book Now
+                 </a>
+               </div>
+   
+               <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="lg:hidden p-2 rounded-xl transition-all duration-200 hover:bg-orange-50" style={{ color: '#1e2a3e' }}>
+                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   {isMenuOpen ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /> : <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />}
+                 </svg>
+               </button>
+             </div>
+   
+             {/* Mobile Menu */}
+             <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-[70vh] opacity-100 mt-5 overflow-y-auto' : 'max-h-0 opacity-0'}`}>
+               <div className="py-3 space-y-1 border-t" style={{ borderColor: '#f0e6dc' }}>
+                 {Object.entries(navStructure).map(([label, config], idx) => (
+                   <div key={idx}>
+                     {config.type === "link" ? (
+                       <a href={config.href} className="block py-3 px-3 rounded-xl font-medium transition-all duration-200 hover:bg-orange-50 hover:text-orange-500" style={{ color: '#1e2a3e' }} onClick={() => setIsMenuOpen(false)}>{label}</a>
+                     ) : (
+                       <>
+                         <button onClick={() => toggleMobileMenu(label)} className="w-full flex justify-between items-center py-3 px-3 rounded-xl font-medium transition-all duration-200 hover:bg-orange-50" style={{ color: '#1e2a3e' }}>
+                           <span>{label}</span>
+                           <svg className={`w-5 h-5 transition-transform duration-200 ${mobileOpenMenus[label] ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                           </svg>
+                         </button>
+                         {mobileOpenMenus[label] && (
+                           <div className="ml-5 mt-1 space-y-3 border-l-2 pl-3" style={{ borderColor: '#e67e22' }}>
+                             {Object.entries(config.items).map(([category, categoryData], catIdx) => (
+                               <div key={catIdx} className="space-y-1">
+                                 <div className="px-3 py-1.5"><span className="text-xs font-bold uppercase tracking-wider" style={{ color: '#e67e22' }}>{category}</span></div>
+                                 {categoryData.items.length > 0 ? categoryData.items.map((item, itemIdx) => (
+                                   <a  key={itemIdx}
+       href={item.link} className="block py-2 px-4 text-sm rounded-lg transition-all duration-200 hover:bg-orange-50 hover:text-orange-500" style={{ color: '#1e2a3e' }}>{item.name}</a>
+                                 )) : (
+                                   <a href={`/${category.toLowerCase().replace(/ /g, '')}`} className="block py-2 px-4 text-sm rounded-lg transition-all duration-200 hover:bg-orange-50 hover:text-orange-500" style={{ color: '#1e2a3e' }}>{category}</a>
+                                 )}
+                               </div>
+                             ))}
+                           </div>
+                         )}
+                       </>
+                     )}
+                   </div>
+                 ))}
+                 
+                 <div className="pt-4 mt-4 border-t" style={{ borderColor: '#f0e6dc' }}>
+                   <a href="/contact" className="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl font-semibold transition-all duration-300" style={{ backgroundColor: '#e67e22', color: '#ffffff' }} onClick={() => setIsMenuOpen(false)}>
+                     <span>🚕</span> Book Now
+                   </a>
+                 </div>
+   
+                 <div className="pt-4 space-y-2 text-sm text-gray-500 px-2">
+                   <a href="tel:+919888767474" className="flex items-center gap-2 py-1 text-gray-600"><span>📞</span> +91 98887 67474</a>
+                   <a href="mailto:info@ranveertravels.com" className="flex items-center gap-2 py-1 text-gray-600"><span>✉️</span> info@ranveertravels.com</a>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </nav>
     
     <div ref={sectionRef} className="min-h-screen" style={{ backgroundColor: '#ffffff' }}>
       

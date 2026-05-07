@@ -18,7 +18,10 @@ import Home from "./Components/Travels";
 import AboutPage from "./Components/About";
 import ContactPage from "./Components/Contact";
 import TravelDesk from "./Components/TravelDesk";
-
+import ToyotaEtios from "./Components/ToyotaEtios";
+import ToyotaHiace from "./Components/ToyotaHiace";
+import MercedesBenzEClass from "./Components/MercedesBenzEClass";
+import FordEndeavour from "./Components/FordEndeavour.jsx";
 
 
 
@@ -33,7 +36,10 @@ function AppRouter() {
         <Route path="/contactus" element={<ContactPage/>}/>
          <Route path="/traveldesk" element={<TravelDesk/>}/>
      
-
+ <Route path="/car/toyota-etios" element={<ToyotaEtios />} />
+        <Route path="/car/ford-endeavour" element={<FordEndeavour />} />
+        <Route path="/car/toyota-hiace" element={<ToyotaHiace />} />
+        <Route path="/car/mercedes-e-class" element={<MercedesBenzEClass />} />
 
 
  
