@@ -158,11 +158,11 @@ const TravelDesk = () => {
                  </svg>
                  +91 98887 67474
                </a>
-               <a href="mailto:info@ranveertravels.com" className="text-gray-300 hover:text-orange-400 text-sm transition flex items-center gap-2">
+               <a href="mailto:info@amritsarsightseeing.com" className="text-gray-300 hover:text-orange-400 text-sm transition flex items-center gap-2">
                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#e67e22' }}>
                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                  </svg>
-                 info@ranveertravels.com
+                 info@amritsarsightseeing.com
                </a>
              </div>
              <div className="flex items-center gap-4">
@@ -180,13 +180,12 @@ const TravelDesk = () => {
              <div className="flex justify-between items-center">
                <a href="/" className="flex items-center group">
                  <div className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:shadow-lg" style={{ backgroundColor: '#e67e22' }}>
-                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                   </svg>
+                          <span className="font-bold text-xl tracking-tight" style={{ color: '#ffffff' }}>A</span>
+         
                  </div>
                  <div className="ml-3">
-                   <span className="font-bold text-xl tracking-tight" style={{ color: '#1e2a3e' }}>RANVEER</span>
-                   <span className="block text-xs -mt-0.5 font-medium" style={{ color: '#e67e22' }}>Tour & Travels</span>
+                   <span className="font-bold text-xl tracking-tight" style={{ color: '#1e2a3e' }}>Amritsar</span>
+                   <span className="block text-xs -mt-0.5 font-medium" style={{ color: '#e67e22' }}>Sight Seeing</span>
                  </div>
                </a>
    
@@ -228,7 +227,7 @@ const TravelDesk = () => {
                </div>
    
                <div className="hidden lg:block">
-                 <a href="/contact" className="px-6 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 flex items-center gap-2" style={{ backgroundColor: '#e67e22', color: '#ffffff' }}>
+                 <a href="/contactus" className="px-6 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 flex items-center gap-2" style={{ backgroundColor: '#e67e22', color: '#ffffff' }}>
                    <span>🚕</span> Book Now
                  </a>
                </div>
@@ -276,14 +275,14 @@ const TravelDesk = () => {
                  ))}
                  
                  <div className="pt-4 mt-4 border-t" style={{ borderColor: '#f0e6dc' }}>
-                   <a href="/contact" className="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl font-semibold transition-all duration-300" style={{ backgroundColor: '#e67e22', color: '#ffffff' }} onClick={() => setIsMenuOpen(false)}>
+                   <a href="/contactus" className="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl font-semibold transition-all duration-300" style={{ backgroundColor: '#e67e22', color: '#ffffff' }} onClick={() => setIsMenuOpen(false)}>
                      <span>🚕</span> Book Now
                    </a>
                  </div>
    
                  <div className="pt-4 space-y-2 text-sm text-gray-500 px-2">
                    <a href="tel:+919888767474" className="flex items-center gap-2 py-1 text-gray-600"><span>📞</span> +91 98887 67474</a>
-                   <a href="mailto:info@ranveertravels.com" className="flex items-center gap-2 py-1 text-gray-600"><span>✉️</span> info@ranveertravels.com</a>
+                   <a href="mailto:info@amritsarsightseeing.com" className="flex items-center gap-2 py-1 text-gray-600"><span>✉️</span> info@amritsarsightseeing.com</a>
                  </div>
                </div>
              </div>
@@ -445,8 +444,8 @@ const TravelDesk = () => {
                 </div>
                 <div>
                   <p className="text-gray-600 text-sm mb-1">Email Us</p>
-                  <a href="mailto:info@ranveertravels.com" className="text-gray-800 font-medium hover:text-orange-500 transition">
-                    info@ranveertravels.com
+                  <a href="mailto:info@amritsarsightseeing.com" className="text-gray-800 font-medium hover:text-orange-500 transition">
+                    info@amritsarsightseeing.com
                   </a>
                 </div>
                 <div>

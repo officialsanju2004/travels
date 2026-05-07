@@ -48,7 +48,7 @@ const AboutSection = () => {
           >
             <img 
               src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&h=600&fit=crop" 
-              alt="Ranveer Tour & Travels Fleet"
+              alt="Amritsar Sight Seeing "
               className="w-full h-full object-cover"
             />
             <div 
@@ -77,7 +77,7 @@ const AboutSection = () => {
               className="text-3xl md:text-4xl font-bold mb-4"
               style={{ color: '#1e2a3e' }}
             >
-              Welcome to <span style={{ color: '#e67e22' }}>Ranveer Tour & Travels</span>
+              Welcome to <span style={{ color: '#e67e22' }}>Amritsar Sight Seeing</span>
             </h2>
             
             <div 
@@ -86,7 +86,7 @@ const AboutSection = () => {
             />
             
             <p className="text-gray-600 leading-relaxed mb-4">
-              Ranveer Tour & Travels is Amritsar's most trusted taxi service provider, 
+              Amritsar Sight Seeing is Amritsar's most trusted taxi service provider, 
               offering luxury and comfort for over a decade. We take pride in serving 
               thousands of satisfied customers with our reliable and punctual service.
             </p>

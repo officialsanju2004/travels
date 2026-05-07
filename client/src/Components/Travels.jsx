@@ -298,11 +298,11 @@ const Home = () => {
               </svg>
               +91 98887 67474
             </a>
-            <a href="mailto:info@ranveertravels.com" className="text-gray-300 hover:text-orange-400 text-sm transition flex items-center gap-2">
+            <a href="mailto:info@amritsarsightseeing.com" className="text-gray-300 hover:text-orange-400 text-sm transition flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#e67e22' }}>
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              info@ranveertravels.com
+              info@amritsarsightseeing.com
             </a>
           </div>
           <div className="flex items-center gap-4">
@@ -320,13 +320,13 @@ const Home = () => {
           <div className="flex justify-between items-center">
             <a href="/" className="flex items-center group">
               <div className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:shadow-lg" style={{ backgroundColor: '#e67e22' }}>
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                </svg>
+                
+                         <span className="font-bold text-xl tracking-tight" style={{ color: '#ffffff' }}>A</span>
+                      
               </div>
               <div className="ml-3">
-                <span className="font-bold text-xl tracking-tight" style={{ color: '#1e2a3e' }}>RANVEER</span>
-                <span className="block text-xs -mt-0.5 font-medium" style={{ color: '#e67e22' }}>Tour & Travels</span>
+                <span className="font-bold text-xl tracking-tight" style={{ color: '#1e2a3e' }}>Amritsar</span>
+                <span className="block text-xs -mt-0.5 font-medium" style={{ color: '#e67e22' }}>Sight Seeing</span>
               </div>
             </a>
 
@@ -368,7 +368,7 @@ const Home = () => {
             </div>
 
             <div className="hidden lg:block">
-              <a href="/contact" className="px-6 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 flex items-center gap-2" style={{ backgroundColor: '#e67e22', color: '#ffffff' }}>
+              <a href="/contactususus" className="px-6 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 flex items-center gap-2" style={{ backgroundColor: '#e67e22', color: '#ffffff' }}>
                 <span>🚕</span> Book Now
               </a>
             </div>
@@ -416,14 +416,14 @@ const Home = () => {
               ))}
               
               <div className="pt-4 mt-4 border-t" style={{ borderColor: '#f0e6dc' }}>
-                <a href="/contact" className="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl font-semibold transition-all duration-300" style={{ backgroundColor: '#e67e22', color: '#ffffff' }} onClick={() => setIsMenuOpen(false)}>
+                <a href="/contactususus" className="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl font-semibold transition-all duration-300" style={{ backgroundColor: '#e67e22', color: '#ffffff' }} onClick={() => setIsMenuOpen(false)}>
                   <span>🚕</span> Book Now
                 </a>
               </div>
 
               <div className="pt-4 space-y-2 text-sm text-gray-500 px-2">
                 <a href="tel:+919888767474" className="flex items-center gap-2 py-1 text-gray-600"><span>📞</span> +91 98887 67474</a>
-                <a href="mailto:info@ranveertravels.com" className="flex items-center gap-2 py-1 text-gray-600"><span>✉️</span> info@ranveertravels.com</a>
+                <a href="mailto:info@amritsarsightseeing.com" className="flex items-center gap-2 py-1 text-gray-600"><span>✉️</span> info@amritsarsightseeing.com</a>
               </div>
             </div>
           </div>
@@ -545,12 +545,12 @@ const Home = () => {
             <h2 className="text-3xl md:text-5xl font-bold" style={{ color: '#1e2a3e' }}>TAXI SERVICE IN AMRITSAR</h2>
             <div className="w-20 h-1 mx-auto mt-4 rounded-full" style={{ backgroundColor: '#e67e22' }} />
           </div>
-          <div className="text-center mb-10"><h3 className="text-2xl md:text-3xl font-semibold" style={{ color: '#1e2a3e' }}>RANVEER TOUR & TRAVELS</h3></div>
+          <div className="text-center mb-10"><h3 className="text-2xl md:text-3xl font-semibold" style={{ color: '#1e2a3e' }}>Amritsar Sight Seeing</h3></div>
           <div className="rounded-2xl overflow-hidden transition-all duration-700" style={{ boxShadow: '0 20px 35px -10px rgba(0, 0, 0, 0.15)', backgroundColor: '#f8f4f0' }}>
             <div className="relative aspect-video bg-gray-900">
               {!isVideoPlaying ? (
                 <div className="relative w-full h-full cursor-pointer group" onClick={handlePlayVideo}>
-                  <img src={THUMBNAIL_URL} alt="Ranveer Tour & Travels" className="w-full h-full object-cover" />
+                  <img src={THUMBNAIL_URL} alt="Amritsar Sight Seeing" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all duration-300" />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 transform group-hover:scale-110 group-hover:shadow-2xl" style={{ backgroundColor: '#e67e22' }}>
@@ -562,7 +562,7 @@ const Home = () => {
                     <span>Watch on YouTube</span>
                   </div>
                 </div>
-              ) : (<iframe className="absolute top-0 left-0 w-full h-full" src={VIDEO_URL} title="Ranveer Tour & Travels" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />)}
+              ) : (<iframe className="absolute top-0 left-0 w-full h-full" src={VIDEO_URL} title="Amritsar Sight Seeing" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />)}
             </div>
             <div className="p-6 md:p-8">
               <div className="flex flex-wrap items-center justify-between gap-4">
@@ -584,7 +584,7 @@ const Home = () => {
               <h3 className="text-xl font-bold mb-5 pb-2 inline-block border-b-2" style={{ color: '#e67e22', borderBottomColor: '#e67e22' }}>Contact Info</h3>
               <div className="space-y-4">
                 <div><p className="text-gray-400 text-sm mb-1">Got Questions? Call us 24/7!</p><p className="text-white font-semibold text-lg flex items-center gap-2"><svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#e67e22' }}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>+91 98887 67474</p></div>
-                <div><p className="text-gray-400 text-sm mb-1 flex items-center gap-2"><svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#e67e22' }}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>info@ranveertravels.com</p></div>
+                <div><p className="text-gray-400 text-sm mb-1 flex items-center gap-2"><svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#e67e22' }}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>info@amritsarsightseeing.com</p></div>
                 <div><p className="text-gray-400 text-sm flex items-start gap-2"><svg className="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#e67e22' }}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg><span className="text-gray-300 text-sm">79 Kennedy Avenue Amritsar Punjab 143001</span></p></div>
                 <div><p className="text-gray-400 text-sm flex items-start gap-2"><svg className="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#e67e22' }}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg><span className="text-gray-300 text-sm">2 Maple Street Back side IVY Hospital Airport Road Amritsar Punjab 143001</span></p></div>
               </div>
@@ -593,7 +593,7 @@ const Home = () => {
             <div className={fadeInClass('200')}><h3 className="text-xl font-bold mb-5 pb-2 inline-block border-b-2" style={{ color: '#e67e22', borderBottomColor: '#e67e22' }}>Top Destinations</h3><div className="grid grid-cols-1 gap-1 max-h-80 overflow-y-auto pr-2" style={{ scrollbarWidth: 'thin' }}>{topDestinations.map((destination, index) => (<a key={index} href="#" className="text-gray-400 hover:text-orange-500 text-sm py-1 transition-colors duration-200 flex items-center gap-1"><span className="text-orange-500">›</span> {destination}</a>))}</div></div>
             <div className={fadeInClass('300')}><h3 className="text-xl font-bold mb-5 pb-2 inline-block border-b-2" style={{ color: '#e67e22', borderBottomColor: '#e67e22' }}>Taxi Service In Amritsar</h3><div className="grid grid-cols-1 gap-1">{taxiServices.map((service, index) => (<a key={index} href="#" className="text-gray-400 hover:text-orange-500 text-sm py-1 transition-colors duration-200 flex items-center gap-1"><span className="text-orange-500">›</span> {service}</a>))}</div></div>
           </div>
-          <div className="pt-8 mt-4 border-t text-center" style={{ borderColor: '#2d3e4e' }}><p className="text-gray-500 text-sm">© {new Date().getFullYear()} Ranveer Tour & Travels. All rights reserved.</p></div>
+          <div className="pt-8 mt-4 border-t text-center" style={{ borderColor: '#2d3e4e' }}><p className="text-gray-500 text-sm">© {new Date().getFullYear()} Amritsar Sight Seeing. All rights reserved.</p></div>
         </div>
       </footer>
 

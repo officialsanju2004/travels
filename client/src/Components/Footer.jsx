@@ -78,7 +78,7 @@ const Footer = () => {
                   <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#e67e22' }}>
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  info@ranveertravels.com
+                  info@amritsarsightseeing.com
                 </p>
               </div>
               <div>
@@ -151,7 +151,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 mt-4 border-t text-center" style={{ borderColor: '#2d3e4e' }}>
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} Ranveer Tour & Travels. All rights reserved.
+            © {new Date().getFullYear()} Amritsar Sight Seeing. All rights reserved.
           </p>
         </div>
       </div>

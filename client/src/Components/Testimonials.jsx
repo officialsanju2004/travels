@@ -70,7 +70,7 @@ const Testimonials = () => {
       name: "Harpreet Singh",
       location: "Ludhiana",
       rating: 5,
-      text: "Wonderful experience with Ranveer Travels! The tempo traveller was perfect for our family reunion trip to Dalhousie. Driver was very experienced.",
+      text: "Wonderful experience with Amritsar Sight Seeing ! The tempo traveller was perfect for our family reunion trip to Dalhousie. Driver was very experienced.",
       avatar: "HS",
       date: "September 2024"
     },
