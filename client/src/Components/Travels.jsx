@@ -3,6 +3,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaArrowUp } from 'react-icons/fa';
 import Testimonials from './Testimonials';
 import AboutSection from './AboutSmall';
+import image1 from "../../Images/image.png";
+import image2 from "../../Images/image2.png";
+
 
 const Home = () => {
   const sectionRef = useRef(null);
@@ -18,7 +21,7 @@ const Home = () => {
   const autoPlayRef = useRef(null);
   const footerRef = useRef(null);
 
-  const VIDEO_ID = "YOUR_VIDEO_ID_HERE";
+  const VIDEO_ID = "";
   const THUMBNAIL_URL = `https://img.youtube.com/vi/${VIDEO_ID}/maxresdefault.jpg`;
   const VIDEO_URL = `https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1&rel=0`;
 
@@ -107,8 +110,8 @@ const Home = () => {
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1606664515524-ed8f3c0590e5?w=1920&h=1080&fit=crop",
-      mobileImage: "https://images.unsplash.com/photo-1606664515524-ed8f3c0590e5?w=800&h=1200&fit=crop",
+      image: image1,
+      mobileImage: image1,
       title: "Tempo Traveller",
       subtitle: "Group Travel Made Easy",
       description: "Spacious and comfortable tempo travellers perfect for family trips and group tours.",
@@ -118,8 +121,8 @@ const Home = () => {
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=1920&h=1080&fit=crop",
-      mobileImage: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&h=1200&fit=crop",
+      image: image2,
+      mobileImage: image2,
       title: "24/7 Taxi Service",
       subtitle: "Your Trusted Travel Partner",
       description: "Round-the-clock taxi services in Amritsar and across Punjab. Reliable, punctual, and professional.",
@@ -179,9 +182,9 @@ const Home = () => {
   };
 
   const cars = [
-    { id: 1, name: "Mercedes Benz E Class", image: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&h=500&fit=crop", doors: 4, passengers: 3, luggage: 2, price: "From ₹15/km", type: "Luxury Sedan", features: ["Leather Seats", "AC", "WiFi", "Water Bottles"] },
+    { id: 1, name: "Mercedes Benz E Class", image: image1, doors: 4, passengers: 3, luggage: 2, price: "From ₹15/km", type: "Luxury Sedan", features: ["Leather Seats", "AC", "WiFi", "Water Bottles"] },
     { id: 2, name: "Mercedes Benz S Class", image: "https://images.unsplash.com/photo-1621135802920-133df287f89c?w=800&h=500&fit=crop", doors: 4, passengers: 3, luggage: 2, price: "From ₹20/km", type: "Luxury Sedan", features: ["Massage Seats", "AC", "WiFi", "Refreshments"] },
-    { id: 3, name: "Toyota Innova Crysta", image: "https://images.unsplash.com/photo-1606664515524-ed8f3c0590e5?w=800&h=500&fit=crop", doors: 4, passengers: 7, luggage: 4, price: "From ₹12/km", type: "SUV/MUV", features: ["Spacious", "AC", "USB Charging", "Bottle Holders"] },
+    { id: 3, name: "Toyota Innova Crysta", image: image2, doors: 4, passengers: 7, luggage: 4, price: "From ₹12/km", type: "SUV/MUV", features: ["Spacious", "AC", "USB Charging", "Bottle Holders"] },
     { id: 4, name: "Tempo Traveller", image: "https://images.unsplash.com/photo-1581540222194-0def2dda95b8?w=800&h=500&fit=crop", doors: 2, passengers: 12, luggage: 8, price: "From ₹25/km", type: "Luxury Bus", features: ["Pushback Seats", "AC", "TV", "Reading Lights"] }
   ];
 
