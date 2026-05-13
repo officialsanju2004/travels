@@ -67,7 +67,7 @@ const TravelDesk = () => {
     { 
       id: 1, 
       name: "HYATT AMRITSAR", 
-      phone: "+91 98887 67474",
+      phone: "+91 95922 57332",
       rating: 5,
       price: "₹8,000+",
       location: "Airport Road",
@@ -77,7 +77,7 @@ const TravelDesk = () => {
     { 
       id: 2, 
       name: "RADISSON BLU AMRITSAR", 
-      phone: "+91 98887 67474",
+      phone: "+91 95922 57332",
       rating: 5,
       price: "₹7,500+",
       location: "Albert Road",
@@ -87,7 +87,7 @@ const TravelDesk = () => {
     { 
       id: 3, 
       name: "LEMON TREE AMRITSAR", 
-      phone: "+91 98887 67474",
+      phone: "+91 95922 57332",
       rating: 4,
       price: "₹5,000+",
       location: "Ranjit Avenue",
@@ -97,7 +97,7 @@ const TravelDesk = () => {
     { 
       id: 4, 
       name: "FAIRFIELD BY MARRIOTT AMRITSAR", 
-      phone: "+91 98887 67474",
+      phone: "+91 95922 57332",
       rating: 5,
       price: "₹9,000+",
       location: "Golden Temple Road",
@@ -152,11 +152,11 @@ const TravelDesk = () => {
          <div className="hidden md:block py-2.5 px-6" style={{ backgroundColor: '#1e2a3e' }}>
            <div className="max-w-7xl mx-auto flex justify-between items-center">
              <div className="flex items-center gap-6">
-               <a href="tel:+919888767474" className="text-gray-300 hover:text-orange-400 text-sm transition flex items-center gap-2">
+               <a href="tel:+919592257332" className="text-gray-300 hover:text-orange-400 text-sm transition flex items-center gap-2">
                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#e67e22' }}>
                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                  </svg>
-                 +91 98887 67474
+                 +91 95922 57332
                </a>
                <a href="mailto:info@amritsarsightseeing.com" className="text-gray-300 hover:text-orange-400 text-sm transition flex items-center gap-2">
                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#e67e22' }}>
@@ -281,7 +281,7 @@ const TravelDesk = () => {
                  </div>
    
                  <div className="pt-4 space-y-2 text-sm text-gray-500 px-2">
-                   <a href="tel:+919888767474" className="flex items-center gap-2 py-1 text-gray-600"><span>📞</span> +91 98887 67474</a>
+                   <a href="tel:+919592257332" className="flex items-center gap-2 py-1 text-gray-600"><span>📞</span> +91 95922 57332</a>
                    <a href="mailto:info@amritsarsightseeing.com" className="flex items-center gap-2 py-1 text-gray-600"><span>✉️</span> info@amritsarsightseeing.com</a>
                  </div>
                </div>
@@ -435,11 +435,11 @@ const TravelDesk = () => {
               <div className="space-y-5">
                 <div>
                   <p className="text-gray-600 text-sm mb-1">Got Questions? Call us 24/7!</p>
-                  <a href="tel:+919888767474" className="text-2xl font-bold flex items-center gap-2 hover:opacity-80 transition" style={{ color: '#e67e22' }}>
+                  <a href="tel:+919592257332" className="text-2xl font-bold flex items-center gap-2 hover:opacity-80 transition" style={{ color: '#e67e22' }}>
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    +91 98887 67474
+                    +91 95922 57332
                   </a>
                 </div>
                 <div>
@@ -450,7 +450,7 @@ const TravelDesk = () => {
                 </div>
                 <div>
                   <p className="text-gray-600 text-sm mb-1">Office Addresses</p>
-                  <p className="text-gray-700 text-sm">📍 79 Kennedy Avenue Amritsar Punjab 143001</p>
+                  <p className="text-gray-700 text-sm">📍Albert Road Opposite Railway Station Amritsar Punjab 143001</p>
                   <p className="text-gray-700 text-sm mt-2">📍 2 Maple Street, Back side IVY Hospital, Airport Road, Amritsar Punjab 143001</p>
                 </div>
               </div>
@@ -497,7 +497,7 @@ const TravelDesk = () => {
               </div>
               <div>
                 <p className="text-gray-400 text-sm">Emergency Support</p>
-                <p className="text-white font-bold text-xl">+91 98887 67474</p>
+                <p className="text-white font-bold text-xl">+91 95922 57332</p>
               </div>
             </div>
             <div className="w-px h-10 bg-gray-700 hidden sm:block" />

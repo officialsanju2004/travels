@@ -93,10 +93,7 @@ const ContactPage = () => {
     alert('Enquiry submitted successfully! We will contact you soon.');
   };
 
-  // Kennedy Avenue, Amritsar coordinates
-  const mapAddress = "79 Kennedy Avenue, Amritsar, Punjab 143001";
-  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.334!2d74.876!3d31.634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391964aa4e73d0b5%3A0x6b3b5c5d5e5e5e5e!2sKennedy%20Avenue%2C%20Amritsar%2C%20Punjab!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin";
-
+  
   const fadeInClass = (delay) => 
     `transition-all duration-700 delay-${delay} transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`;
 
@@ -106,11 +103,11 @@ const ContactPage = () => {
          <div className="hidden md:block py-2.5 px-6" style={{ backgroundColor: '#1e2a3e' }}>
            <div className="max-w-7xl mx-auto flex justify-between items-center">
              <div className="flex items-center gap-6">
-               <a href="tel:+919888767474" className="text-gray-300 hover:text-orange-400 text-sm transition flex items-center gap-2">
+               <a href="tel:+919592257332" className="text-gray-300 hover:text-orange-400 text-sm transition flex items-center gap-2">
                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#e67e22' }}>
                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                  </svg>
-                 +91 98887 67474
+                 +91 95922 57332
                </a>
                <a href="mailto:info@amritsarsightseeing.com" className="text-gray-300 hover:text-orange-400 text-sm transition flex items-center gap-2">
                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: '#e67e22' }}>
@@ -235,7 +232,7 @@ const ContactPage = () => {
                  </div>
    
                  <div className="pt-4 space-y-2 text-sm text-gray-500 px-2">
-                   <a href="tel:+919888767474" className="flex items-center gap-2 py-1 text-gray-600"><span>📞</span> +91 98887 67474</a>
+                   <a href="tel:+919592257332" className="flex items-center gap-2 py-1 text-gray-600"><span>📞</span> +91 95922 57332</a>
                    <a href="mailto:info@amritsarsightseeing.com" className="flex items-center gap-2 py-1 text-gray-600"><span>✉️</span> info@amritsarsightseeing.com</a>
                  </div>
                </div>
@@ -285,11 +282,11 @@ const ContactPage = () => {
                 <div className="space-y-4">
                   <div>
                     <p className="text-gray-600 text-sm mb-1">Main Office</p>
-                    <p className="text-gray-800 font-medium">79 Kennedy Avenue, Amritsar, Punjab 143001</p>
+                    <p className="text-gray-800 font-medium">Albert Road Opposite Railway Station Amritsar Punjab 143001</p>
                   </div>
                   <div>
                     <p className="text-gray-600 text-sm mb-1">Branch Office</p>
-                    <p className="text-gray-800 font-medium">2 Maple Street, Back side IVY Hospital, Airport Road, Amritsar, Punjab 143001</p>
+                    <p className="text-gray-800 font-medium">Albert Road Opposite Railway Station Amritsar Punjab 143001</p>
                   </div>
                 </div>
               </div>
@@ -309,7 +306,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Call Us 24/7</p>
-                      <p className="font-semibold text-lg" style={{ color: '#1e2a3e' }}>+91 98887 67474</p>
+                      <p className="font-semibold text-lg" style={{ color: '#1e2a3e' }}>+91 95922 57332</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
@@ -492,25 +489,7 @@ const ContactPage = () => {
         </div>
       </div>
 
-      {/* Map Section */}
-      <div className={`py-8 px-4 md:px-8 ${fadeInClass('400')}`}>
-        <div className="max-w-7xl mx-auto">
-          <div className="rounded-2xl overflow-hidden shadow-xl" style={{ boxShadow: '0 10px 30px -12px rgba(0, 0, 0, 0.15)' }}>
-            <iframe
-              src={mapEmbedUrl}
-              className="w-full h-80 md:h-96"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Amritsar Sight Seeing Office Location - Kennedy Avenue, Amritsar"
-            />
-          </div>
-          <p className="text-center text-gray-500 text-sm mt-3">
-            📍 79 Kennedy Avenue, Amritsar, Punjab 143001
-          </p>
-        </div>
-      </div>
+ 
 
       {/* Custom CSS for transition delays */}
       <style jsx>{`
